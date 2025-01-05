@@ -1,0 +1,116 @@
+.heading {
+  font-size: 2rem;
+    background-color: #4CAF50;
+    width: fit-content;
+    padding: 8px;
+    border-radius: 11px;
+    color: #ffffff;
+    font-family: Poppins,sans-serif;
+    font-weight: bold;
+    margin: 0px 0px 30px 30px;
+    /* margin-bottom: 30px; */
+
+}
+/* Contact Container Styling */
+.contact-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading Styling */
+
+
+/* Form Group Styling */
+.form-group {
+  margin-bottom: 20px;
+  position: relative;
+  width: 93%;
+  font-family: Poppins,sans-serif;
+
+}
+
+/* Input Fields Styling */
+.input-field {
+  font-family: Poppins,sans-serif;
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* Focus Animation */
+.input-field:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 10px#4CAF50;
+}
+
+/* Textarea Specific Styling */
+.message-field {
+  height: 100px;
+  resize: none;
+}
+
+/* Submit Button Styling */
+.submit-button {
+  background: #FFB319;
+  color: #000000;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Poppins,sans-serif;
+  
+  transition: background 0.3s ease;
+}
+
+/* Submit Button Hover Animation */
+.submit-button:hover {
+  background: #5548c8;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .contact-container {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .input-field {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
+  .submit-button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .heading {
+    font-size: 1.3rem;
+  }
+
+  .input-field {
+    font-size: 0.8rem;
+    padding: 7px 10px;
+  }
+
+  .submit-button {
+    font-size: 0.8rem;
+    padding: 7px 12px;
+  }
+}

@@ -1,0 +1,123 @@
+/* Basic layout for home page */
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:150px 50px;
+    background-color: #f0e4d5;
+    /* margin-top: 20px; */
+  }
+  
+  /* Left content section */
+  .left-content {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .left-content h1 {
+    font-size: 2.5rem;
+    color: #2b211f;
+    margin-bottom: 20px;
+    font-family: Poppins,sans-serif;
+    /* border-bottom: 12px solid #D6BA73; */
+    text-align: start;
+    
+  }
+  .left-content h1 span{
+    /* border-color: #FFB319; */
+    padding-left: 10px;
+    padding-right: 10px;
+    /* background-color: #D6BA73; */
+    /* border: 2px solid #FEE09B; */
+  }
+  .left-content p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
+    text-align: justify;
+    line-height: 150%;
+    font-family: Poppins,sans-serif;
+
+    
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .hire-me-btn, .resume-btn {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .hire-me-btn {
+    background-color: #FFB319;
+    color: rgb(0, 0, 0);
+    font-family: Poppins,sans-serif;
+
+  }
+  
+  .hire-me-btn:hover {
+    background-color: #ff9e00;
+  }
+  
+  .resume-btn {
+    background-color: #8BBF9F;
+    color: rgb(0, 0, 0);
+    font-family: Poppins,sans-serif;
+    
+  }
+  
+  .resume-btn:hover {
+    background-color: #81eeab;
+    color: rgb(0, 0, 0);
+  }
+  
+  /* Right image section */
+  .right-image {
+    flex: 1;
+    max-width: 46%;
+    border-radius: 10px;
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+  }
+  
+  .right-image img {
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    height: 100%;
+
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .home-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .left-content {
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
+  
+    .right-image {
+      max-width: 100%;
+    }
+  
+    .left-content h1 {
+      font-size: 2rem;
+    }
+  
+    .buttons {
+      flex-direction: column;
+    }
+  }
+  

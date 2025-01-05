@@ -1,0 +1,59 @@
+.icon-box {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    gap: 200px;
+    margin: 30px 90px 20px 130px;
+    border: 1px solid #2b211f;
+    padding: 30px 0px;
+    background-color: #17171E;
+    border-radius: 8px;
+  }
+  
+  .social-icon {
+    font-size: 27px;
+    color: #fee09b;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  .social-icon:hover {
+    color: #ffffff;
+    transform: scale(1.2);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .icon-box {
+      gap: 20px;
+      width: 90%;
+      margin: 20px auto;
+      padding: 20px 0;
+    }
+  
+    .social-icon {
+      font-size: 24px;
+    }
+  }
+  
+  /* Responsive for 320px to 480px */
+  @media screen and (max-width: 480px) {
+    .icon-box {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .social-icon {
+      font-size: 22px;
+    }
+  }
+  
+  /* Responsive for 1920px (Larger screens) */
+  @media screen and (min-width: 1920px) {
+    .icon-box {
+      width: 60%;
+      gap: 100px;
+    }
+  
+    .social-icon {
+      font-size: 35px;
+    }
+  }
